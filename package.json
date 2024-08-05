@@ -1,0 +1,23 @@
+{
+  "name": "newbot",
+  "version": "1.0.0",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "keywords": [],
+  "author": "raon",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@discordjs/rest": "^2.3.0",
+    "chalk": "^4.1.2",
+    "discord-api": "^0.0.1",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.5.2",
+    "node-sass": "^9.0.0",
+    "types": "^0.1.1",
+    "yarn": "^1.22.22"
+  }
+}
