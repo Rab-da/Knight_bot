@@ -2,6 +2,7 @@ require('dotenv').config();
 const { Token } = process.env;
 const { Client, Collection, Events, GatewayIntentBits, ActivityType } = require('discord.js');
 const fs = require('fs');
+const port = process.env.PORT || 3000;
 
 
 const client = new Client({ intents: 32767 });
@@ -20,6 +21,10 @@ for (const folder of functionFolders) {
     for (const file of functionFiles) 
     require(`./functions/${folder}/${file}`)(client);
 };
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
 
 
 client.handleEvents();

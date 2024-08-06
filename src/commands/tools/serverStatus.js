@@ -4,7 +4,10 @@ module.exports = {
     data: new SlashCommandBuilder()
        .setName('서버인원')
        .setDescription('서버의 인원정보')
+       //관리자만 사용가능
        .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
+
+       //임베드 설정
     async execute(interaction) {
         async function sendMessage (message) {
         const embed = new EmbedBuilder()
@@ -26,6 +29,7 @@ module.exports = {
         var dnd = [];
         var offline = [];
 
+        //서버에 있는 인원 상태 가져오기
         await members.forEach(async member => {
             if(member.presence == null) return offline.push({ member: member.id});
             if(member.presence.status == 'online') online.push({member: member.id});
