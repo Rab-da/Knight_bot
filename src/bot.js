@@ -22,7 +22,7 @@ for (const folder of functionFolders) {
     require(`./functions/${folder}/${file}`)(client);
 };
 
-app.listen(port, () => {
+client.listen(port, () => {
     console.log(`Server is running on port ${port}`);
   });
 
