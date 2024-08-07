@@ -27,7 +27,11 @@ new StringSelectMenuOptionBuilder({
             description: `안녕나는조랭이 방송이 궁금하다면?`,
             value: `조랭이`,
             emoji: `<:zorang:1269629340555939960>`
-
+        }), new StringSelectMenuOptionBuilder({
+            label: `유화령`,
+            description: `유화령 방송이 궁금하다면?`,
+            value: `유화령`,
+            emoji: `<:hwaryeong:1270597252926144512>`
         })
         );
 
