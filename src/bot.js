@@ -1,4 +1,5 @@
 require('dotenv').config();
+const express = require('express');
 const { Token } = process.env;
 const { channel } = require('diagnostics_channel');
 const { Client, Collection, Events, GatewayIntentBits, ActivityType, EmbedBuilder } = require('discord.js');
@@ -12,6 +13,18 @@ const client = new Client({
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent
     ]
+});
+
+const app = express();
+const port = 3000;
+
+// 웹 서버 설정
+app.get('/', (req, res) => {
+    res.send('Hello, this is a Discord bot server!');
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
 
 client.commands = new Collection();
