@@ -14,7 +14,7 @@ module.exports = {
                         const embed1 = new EmbedBuilder()
                         .setColor('#00a19c')
                         .setTitle('**와이번P**')
-                        .setDescription("카트라이더를 메인으로 하는 종합게임 스트리머")
+                        .setDescription("카트라이더 게임을 주로 하는게 아닌 카트라이더, 리듬게임을 하는 작곡 스트리머")
                         .setTimestamp(Date.now())
                         .setThumbnail(`https://yt3.googleusercontent.com/-786ashJ2yIgcag0-3PByvNtI-1sy1xiZqi3AY2PIqs5rSwKcm6nqexAAKH97IjPD70vOAmyIg=s160-c-k-c0x00ffffff-no-rj`)
                         .setAuthor({name: `Chivalry`, iconURL: `https://yt3.googleusercontent.com/-786ashJ2yIgcag0-3PByvNtI-1sy1xiZqi3AY2PIqs5rSwKcm6nqexAAKH97IjPD70vOAmyIg=s160-c-k-c0x00ffffff-no-rj`})                        
