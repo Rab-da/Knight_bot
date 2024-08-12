@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const { Token } = process.env;
+const { Token, databaseToken } = process.env;
+const { connect } = require('mongoose');
 const { channel } = require('diagnostics_channel');
 const { Client, Collection, Events, GatewayIntentBits, ActivityType, EmbedBuilder } = require('discord.js');
 const fs = require('fs');
@@ -32,7 +33,6 @@ client.commandArray = [];
 client.buttons = new Collection();
 client.selectMenus = new Collection();
 client.modals = new Collection();
-
 
 const functionFolders = fs.readdirSync(`./src/functions`);
 for (const folder of functionFolders) {
@@ -74,6 +74,6 @@ client.handleEvents();
 client.handleCommands();
 client.handleComponents();
 client.login(Token);
-// (async () => {
-//     connect(databaseToken).catch(console.error);
-// })();
+(async () => {
+    connect(databaseToken).catch(console.error);
+})();

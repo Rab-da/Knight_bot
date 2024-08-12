@@ -14,7 +14,7 @@ module.exports = {
                         const embed1 = new EmbedBuilder()
                         .setColor('#00a19c')
                         .setTitle('**와이번P**')
-                        .setDescription("카트라이더 게임을 주로 하는게 아닌 카트라이더, 리듬게임을 하는 작곡 스트리머")
+                        .setDescription("카트라이더, 리듬게임을 하는 작곡 스트리머")
                         .setTimestamp(Date.now())
                         .setThumbnail(`https://yt3.googleusercontent.com/-786ashJ2yIgcag0-3PByvNtI-1sy1xiZqi3AY2PIqs5rSwKcm6nqexAAKH97IjPD70vOAmyIg=s160-c-k-c0x00ffffff-no-rj`)
                         .setAuthor({name: `Chivalry`, iconURL: `https://yt3.googleusercontent.com/-786ashJ2yIgcag0-3PByvNtI-1sy1xiZqi3AY2PIqs5rSwKcm6nqexAAKH97IjPD70vOAmyIg=s160-c-k-c0x00ffffff-no-rj`})                        
@@ -30,7 +30,7 @@ module.exports = {
                                 name: `| <:youtube:1269627309455970394> 유튜브`, value: "🔗https://youtube.com/channel/UCY8T2BFIwfY-FC8gtbL1Bmg?si=dzFZWAXsgRnL9t-s", inline: false, 
                             },
                     ])
-                        await interaction.reply({embeds: [embed1], ephemeral: true});
+                        await interaction.reply({embeds: [embed1], ephemeral: false});
                     } 
                     break;
                 case "조랭이":
@@ -49,6 +49,10 @@ module.exports = {
                             {
                                 name: `| <:chzzk:1269624509778890904> 치지직`, value: "🔗https://chzzk.naver.com/c27850274cb4bb391d6d753d305cd568", inline: false
                             },
+                            {
+                                name: `| <:youtube:1269627309455970394> 유튜브`, value: "🔗https://www.youtube.com/@joreangyeettok", inline: false
+                            },
+                            
                     ])
                         await interaction.reply({embeds: [embed2], ephemeral: true});
                     }
@@ -70,8 +74,12 @@ module.exports = {
                                 {
                                 name: `| <:chzzk:1269624509778890904> 치지직`, value: "🔗https://chzzk.naver.com/c27850274cb4bb391d6d753d305cd568", inline: false, 
                                 },
+                                {
+                                    name: `| <:youtube:1269627309455970394> 유튜브`, value: "🔗https://www.youtube.com/channel/UCMNIzTh5gL5aaIUDNvEbCTw ", inline: false, 
+                                },
+
                         ])
-                            await interaction.reply({embeds: [embed1], ephemeral: true});
+                            await interaction.reply({embeds: [embed1], ephemeral: false});
                         } 
                         break;
                 default:
