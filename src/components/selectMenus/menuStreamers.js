@@ -30,7 +30,7 @@ module.exports = {
                                 name: `| <:youtube:1269627309455970394> 유튜브`, value: "🔗https://youtube.com/channel/UCY8T2BFIwfY-FC8gtbL1Bmg?si=dzFZWAXsgRnL9t-s", inline: false, 
                             },
                     ])
-                        await interaction.reply({embeds: [embed1], ephemeral: true});
+                        await interaction.reply({embeds: [embed1], ephemeral: false});
                     } 
                     break;
                 case "조랭이":
@@ -54,7 +54,7 @@ module.exports = {
                             },
                             
                     ])
-                        await interaction.reply({embeds: [embed2], ephemeral: true});
+                        await interaction.reply({embeds: [embed2], ephemeral: false});
                     }
                     break;
                 case "유화령":
@@ -79,7 +79,35 @@ module.exports = {
                                 },
 
                         ])
-                            await interaction.reply({embeds: [embed1], ephemeral: true});
+                            await interaction.reply({embeds: [embed1], ephemeral: false});
+                        } 
+                        break;
+                    case "주노씌":
+                        {
+                            const embed1 = new EmbedBuilder()
+                            .setColor('#00a19c')
+                            .setTitle('**주노씌**')
+                            .setDescription("카트라이더: 드리프트, PUBG, 롤(칼바람), DJ MAX 등 다양하게 하는(걸 원하는) 스트리머")
+                            .setTimestamp(Date.now())
+                            .setThumbnail(`https://yt3.googleusercontent.com/oIg6zKJKF3IJgInlBHO_38qCHtbkMNFKf4y3DWrjbHndADPwwJ-cFzxfL21nxGSAL5HVwTYF=s160-c-k-c0x00ffffff-no-rj`)
+                            .setAuthor({name: `Chivalry`, iconURL: `https://yt3.googleusercontent.com/oIg6zKJKF3IJgInlBHO_38qCHtbkMNFKf4y3DWrjbHndADPwwJ-cFzxfL21nxGSAL5HVwTYF=s160-c-k-c0x00ffffff-no-rj`})                        
+                            .setFooter({text: client.user.tag})
+                            .addFields([
+                                {
+                                    name: ` `, value: ':small_red_triangle_down: **주노씌의 방송채널** :small_red_triangle_down:'
+                                },
+                                {
+                                name: `| <:chzzk:1269624509778890904> 치지직`, value: "🔗https://chzzk.naver.com/2534afcf13f068f1107a2ebafed99e55", inline: false, 
+                                },
+                                {
+                                    name: `| <:youtube:1269627309455970394> 유튜브`, value: "🔗https://www.youtube.com/@주노씌_UMaRu", inline: false, 
+                                },
+                                {
+                                    name: `| <:afreeca:1269627298282209371> 아프리카`, value: "🔗https://bj.afreecatv.com/6563hong", inline: false, 
+                                },
+
+                        ])
+                            await interaction.reply({embeds: [embed1], ephemeral: false});
                         } 
                         break;
                 default:
