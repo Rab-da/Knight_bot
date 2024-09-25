@@ -30,7 +30,7 @@ module.exports = {
                                 name: `| <:youtube:1269627309455970394> 유튜브`, value: "🔗https://youtube.com/channel/UCY8T2BFIwfY-FC8gtbL1Bmg?si=dzFZWAXsgRnL9t-s", inline: false, 
                             },
                     ])
-                        await interaction.reply({embeds: [embed1], ephemeral: false});
+                        await interaction.reply({embeds: [embed1], ephemeral: true});
                     } 
                     break;
                 case "조랭이":
@@ -54,7 +54,7 @@ module.exports = {
                             },
                             
                     ])
-                        await interaction.reply({embeds: [embed2], ephemeral: false});
+                        await interaction.reply({embeds: [embed2], ephemeral: true});
                     }
                     break;
                 case "유화령":
@@ -79,7 +79,7 @@ module.exports = {
                                 },
 
                         ])
-                            await interaction.reply({embeds: [embed1], ephemeral: false});
+                            await interaction.reply({embeds: [embed1], ephemeral: true});
                         } 
                         break;
                     case "주노씌":
@@ -107,7 +107,7 @@ module.exports = {
                                 },
 
                         ])
-                            await interaction.reply({embeds: [embed1], ephemeral: false});
+                            await interaction.reply({embeds: [embed1], ephemeral: true});
                         } 
                         break;
                 default:
